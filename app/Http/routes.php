@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('plannen', function () {
+    return view('pagina.plannen');
+});
