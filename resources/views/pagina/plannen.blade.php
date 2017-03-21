@@ -1,48 +1,46 @@
 <html>
-<head>
-    <title>Laravel</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="/webApplication/resources/assets/img/favicon.ico" type="image/x-icon"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Buurtbord Landingpage</title>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+        <link href="/webApplication/resources/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/webApplication/resources/assets/css/main.css" type="text/css">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            color: #B0BEC5;
-            display: table;
-            font-weight: 100;
-            font-family: 'Lato';
-        }
+    </head>
+    <body>
+    <a href="pagina/plannen.blade.php"> <!-- php redirect -->
+        <div class="container">
+            <div class="content">
+                <div class="header">
+                    <div class="rectangle"></div>
+                    <div class="logo_header"></div>
+                </div>
 
-        .container {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
+                <div class="image_home1">
+                    <div class="rectangle_intro">
+                        <h3 class="intro_text">Gemeentelijke plannen</h3>
+                        <p class="intro_subtext">Bekijk hier de plannen van de gemeente voor de buurt.</p>
+                    </div>
 
-        .content {
-            text-align: center;
-            display: inline-block;
-        }
+                </div>
 
-        .title {
-            font-size: 96px;
-            margin-bottom: 40px;
-        }
+                <div class="image_home2">
+                    <div class="rectangle_intro">
+                        <h3 class="intro_text">Gemeentelijke plannen</h3>
+                        <p class="intro_subtext">Bekijk hier de plannen van de gemeente voor de buurt.</p>
+                    </div>
 
-        .quote {
-            font-size: 24px;
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="content">
-        <div class="title">Plannen</div>
-        <div class="container"> Hier komen de plannen</div>
-    </div>
-</div>
-</body>
+                </div>
+
+            </div>
+        </div>
+    </a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="/webApplication/resources/assets/js/bootstrap/bootstrap.min.js"></script>
+    </body>
 </html>

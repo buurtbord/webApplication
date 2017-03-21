@@ -1,3 +1,8 @@
+$logo_url: url('/webApplication/resources/assets/img/Logo-rdam.png');
+$image_landing: url('/webApplication/resources/assets/img/martins-zemlickis.jpg');
+$image_home1: url('/webApplication/resources/assets/img/jurriaan-snikkers.jpg');
+$image_home2: url('/webApplication/resources/assets/img/tim-gouw.jpg');
+
 @font-face
 {
     font-family: 'AFRB';
@@ -23,7 +28,7 @@
     width: 333px;
     height: 39.7px;
 
-    background: url('/webApplication/resources/assets/img/Logo-rdam.png') #fff;
+    background: $logo_url;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -46,7 +51,29 @@
     background-color: #18933c;
 }
 
-.image
+.image_landing
+{
+
+    width: 97%;
+    height: 100%;
+    margin-bottom: 20px;
+
+    background-image: $image_landing;
+    background-size: cover;
+}
+
+.image_home1
+{
+
+    width: 97%;
+    height: 100%;
+    margin-bottom: 20px;
+
+    background-image: $image_home1;
+    background-size: cover;
+}
+
+.image_home2
 {
     position: absolute;
 
@@ -54,7 +81,7 @@
     height: 100%;
     margin-bottom: 20px;
 
-    background-image: url('/webApplication/resources/assets/img/martins-zemlickis.jpg');
+    background-image: $image_home2;
     background-size: cover;
 }
 
