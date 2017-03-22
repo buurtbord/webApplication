@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/webApplication/resources/assets/css/main.css" type="text/css">
 
     </head>
-    <body id="plannen">
+    <body id="plannen"> <!-- redirect -->
         <div class="container">
             <div class="content">
                 <div class="header">
