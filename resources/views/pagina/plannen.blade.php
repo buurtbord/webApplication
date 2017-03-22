@@ -20,7 +20,7 @@
                     </div>
                     <div class="login_header">
                         <span>
-                            <button class="btn btn-default" type="button" aria-haspopup="true" aria-expanded="false">Inloggen</button>
+                            <a href="{{ url('/login') }}"> <button  class="btn btn-default" type="button" aria-haspopup="true" aria-expanded="false">Inloggen</button> </a>
                         </span>
                     </div>
                 </div>
