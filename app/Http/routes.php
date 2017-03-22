@@ -19,3 +19,9 @@ Route::get('/', function () {
 Route::get('plannen', function () {
     return view('pagina.plannen');
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+
