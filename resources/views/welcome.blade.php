@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/webApplication/resources/assets/css/main.css" type="text/css">
 
     </head>
-    <body>
+    <body id="landing">
     <a href="pagina/plannen.blade.php"> <!-- php redirect -->
         <div class="container">
             <div class="content">

@@ -4,6 +4,9 @@
 @font-face {
   font-family: 'ArialMT';
   src: url("/webApplication/resources/assets/fonts/ArialMT/ArialMT-Regular.ttf"); }
+a:hover {
+  text-decoration: none; }
+
 .logo_header {
   position: relative;
   top: -60px;
@@ -15,10 +18,47 @@
   background-repeat: no-repeat;
   background-size: contain; }
 
+#plannen .logo_header {
+  right: 30px;
+  top: 35px;
+  height: auto;
+  width: auto;
+  background: none;
+  float: left; }
+
+.login_header {
+  float: right;
+  position: absolute;
+  top: 35px;
+  right: 20px; }
+
+.login_header button.btn-default,
+.login_header button.btn-default:hover {
+  width: 160px;
+  height: 40px;
+  background: #18933c;
+  color: #fff;
+  font-family: "ArialMT";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0;
+  border: none; }
+
+.logo_header h1 {
+  font-family: 'AFRB';
+  margin: 0; }
+
 .rectangle {
   width: 440px;
   height: 87px;
   margin: 0 auto;
+  background-color: #18933c; }
+
+#plannen .rectangle {
+  width: 440px;
+  height: 61px;
+  margin: 0 0 20px 0;
   background-color: #18933c; }
 
 .rectangle_intro {
@@ -27,26 +67,27 @@
   margin: 0 auto;
   background-color: #18933c; }
 
+#plannen .rectangle_intro {
+  width: 440px;
+  height: 340px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: #18933c; }
+
 .image_landing {
-  width: 97%;
+  width: 100%;
   height: 100%;
   margin-bottom: 20px;
   background-image: url("/webApplication/resources/assets/img/martins-zemlickis.jpg");
   background-size: cover; }
 
-.image_home1 {
-  width: 97%;
-  height: 100%;
+.image_home {
+  width: 61%;
+  position: absolute;
+  right: 20px;
+  height: 421px;
   margin-bottom: 20px;
   background-image: url("/webApplication/resources/assets/img/jurriaan-snikkers.jpg");
-  background-size: cover; }
-
-.image_home2 {
-  position: absolute;
-  width: 97%;
-  height: 100%;
-  margin-bottom: 20px;
-  background-image: url("/webApplication/resources/assets/img/tim-gouw.jpg");
   background-size: cover; }
 
 .container {
@@ -60,25 +101,28 @@
   margin-right: 30px;
   margin-left: 30px; }
 
-.intro_text {
+.rectangle_intro h3 {
   font-family: 'AFRB';
   font-size: 60px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
   margin-top: 0 !important;
   padding: 20px;
   letter-spacing: normal;
   color: #fff; }
 
-.intro_subtext {
+#plannen .rectangle_intro h3 {
+  font-family: 'AFRB';
+  font-size: 40px;
+  margin-top: 0 !important;
+  padding: 20px;
+  letter-spacing: normal;
+  color: #fff; }
+
+#plannen .box:nth-child(2) {
+  margin-bottom: 20px; }
+
+.rectangle_intro p {
   font-family: 'ArialMT';
-  font-size: 19px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
+  font-size: 18px;
   margin: 25px;
   letter-spacing: normal;
   color: #fff; }
