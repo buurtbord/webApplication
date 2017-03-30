@@ -8,7 +8,7 @@
 
         <link href="/webApplication/resources/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/webApplication/resources/assets/css/main.css" type="text/css">
+        <link rel="stylesheet" href="" type="text/css">
 
     </head>
     <body id="plannen"> <!-- redirect -->
@@ -25,29 +25,31 @@
                     </div>
                 </div>
 
+                @foreach($plannen as $plan)
                 <div class="box">
                     <div class="image_home"></div>
                     <div class="rectangle"></div>
                     <a href="">
                         <div class="rectangle_intro">
-                            <h3 class="intro_text">Gemeentelijke plannen</h3>
+                            <h3 href="/plannen/{{$plan->id}}" class="intro_text">{{$plan->name}}</h3>
                             <p class="intro_subtext">Bekijk hier de plannen van de gemeente voor de buurt.</p>
                         </div>
                     </a>
 
                 </div>
+                @endforeach
 
-                <div class="box">
-                    <div class="image_home"></div>
-                    <div class="rectangle"></div>
-                    <a href="">
-                        <div class="rectangle_intro">
-                            <h3>Buurtbewoners plannen</h3>
-                            <p>Bekijk hier de plannen van uw medebuurtbewoners</p>
-                        </div>
-                    </a>
+                {{--<div class="box">--}}
+                    {{--<div class="image_home"></div>--}}
+                    {{--<div class="rectangle"></div>--}}
+                    {{--<a href="">--}}
+                        {{--<div class="rectangle_intro">--}}
+                            {{--<h3>Buurtbewoners plannen</h3>--}}
+                            {{--<p>Bekijk hier de plannen van uw medebuurtbewoners</p>--}}
+                        {{--</div>--}}
+                    {{--</a>--}}
 
-                </div>
+                {{--</div>--}}
 
             </div>
         </div>

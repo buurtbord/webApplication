@@ -22,6 +22,13 @@ Route::get('plannen', function () {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'PlannenController@plannen');
+
+
+Route::get('/plannen', 'PlannenController@plannen');
+
+Route::get('plannen/{plan}', 'BuurtPlannenController@buurtplannen');
+
+
 
 
