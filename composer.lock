@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "baab18ce4da33d90ad4933a89838b7ea",
-    "content-hash": "d25b555927756a2f206c7417de73e5ce",
+    "hash": "5be6b60b2893c6e1cf0c2270fb82a920",
+    "content-hash": "55771e908e175380a3c163edd040b8f7",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -438,7 +438,7 @@
         },
         {
             "name": "laravelcollective/html",
-            "version": "v5.2.5",
+            "version": "5.2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
@@ -3240,7 +3240,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "laravelcollective/html": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

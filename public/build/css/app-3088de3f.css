@@ -1,11 +1,9 @@
 @font-face {
   font-family: 'AFRB';
-  src: url("/resources/assets/fonts/Arial-for-Rotterdam/Arial-for-Rotterdam-Bold.ttf"); }
-
+  src: url("../../fonts/Arial-for-Rotterdam/Arial-for-Rotterdam-Bold.ttf"); }
 @font-face {
   font-family: 'ArialMT';
-  src: url("/resources/assets/fonts/ArialMT/ArialMT-Regular.ttf"); }
-
+  src: url("../../fonts/ArialMT/ArialMT-Regular.ttf"); }
 a:hover {
   text-decoration: none; }
 
@@ -52,7 +50,7 @@ a:hover {
   margin: 0; }
 
 .rectangle {
-  width: 440px;
+  width: 410px;
   height: 87px;
   margin: 0 auto;
   background-color: #18933c; }
@@ -64,9 +62,9 @@ a:hover {
   background-color: #18933c; }
 
 .rectangle_intro {
-  width: 440px;
-  height: 440px;
-  margin: 0 auto;
+  width: 410px;
+  height: 582px;
+  margin: 0 auto 200px auto;
   background-color: #18933c; }
 
 #plannen .rectangle_intro {
@@ -75,11 +73,17 @@ a:hover {
   display: inline-block;
   margin-bottom: 20px;
   background-color: #18933c; }
+  #plannen .rectangle_intro h3 {
+    font-family: 'AFRB';
+    font-size: 40px;
+    margin-top: 0 !important;
+    padding: 20px;
+    letter-spacing: normal;
+    color: #fff; }
 
 .image_landing {
   width: 100%;
   height: 100%;
-  margin-bottom: 20px;
   background-image: url("../../images/martins-zemlickis.jpg");
   background-size: cover; }
 
@@ -93,9 +97,7 @@ a:hover {
   background-size: cover; }
 
 .container {
-  width: 97%;
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 100%;
   padding: 0; }
 
 .header {
@@ -111,14 +113,6 @@ a:hover {
   letter-spacing: normal;
   color: #fff; }
 
-#plannen .rectangle_intro h3 {
-  font-family: 'AFRB';
-  font-size: 40px;
-  margin-top: 0 !important;
-  padding: 20px;
-  letter-spacing: normal;
-  color: #fff; }
-
 #plannen .box:nth-child(2) {
   margin-bottom: 20px; }
 
@@ -129,4 +123,38 @@ a:hover {
   letter-spacing: normal;
   color: #fff; }
 
-/*# sourceMappingURL=app.css.map */
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 10px; }
+
+.form-horizontal .control-label {
+  text-align: left;
+  padding-bottom: 7px;
+  font-weight: 500;
+  color: #fff; }
+
+.form-control {
+  background: transparent;
+  width: 348px;
+  height: 40px;
+  color: #fff;
+  border: solid 3px #fff;
+  border-radius: 0; }
+
+.login_btn,
+.login_btn:hover {
+  width: 122px;
+  background-color: #fff;
+  border: solid 2px #fff;
+  border-radius: 0;
+  font-family: "ArialMT";
+  font-size: 20px;
+  font-weight: bold;
+  color: #000; }
+  .login_btn i.fa.fa-arrow-circle-o-right,
+  .login_btn:hover i.fa.fa-arrow-circle-o-right {
+    position: relative;
+    top: 1px; }
+
+/*# sourceMappingURL=app-3088de3f.css.map */

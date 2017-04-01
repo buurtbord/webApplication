@@ -1,11 +1,9 @@
 @font-face {
   font-family: 'AFRB';
   src: url("/resources/assets/fonts/Arial-for-Rotterdam/Arial-for-Rotterdam-Bold.ttf"); }
-
 @font-face {
   font-family: 'ArialMT';
   src: url("/resources/assets/fonts/ArialMT/ArialMT-Regular.ttf"); }
-
 a:hover {
   text-decoration: none; }
 
@@ -93,9 +91,7 @@ a:hover {
   background-size: cover; }
 
 .container {
-  width: 97%;
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 100%;
   padding: 0; }
 
 .header {
