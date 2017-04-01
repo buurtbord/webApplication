@@ -8,7 +8,7 @@
 
         <link href="/webApplication/resources/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="" type="text/css">
+        <link rel="stylesheet" href="{{ elixir('css/app.css') }}" type="text/css">
 
     </head>
     <body id="plannen"> <!-- redirect -->
@@ -32,6 +32,7 @@
                     <a href="">
                         <div class="rectangle_intro">
                             <h3 href="/plannen/{{$plan->id}}" class="intro_text">{{$plan->name}}</h3>
+                            {{--<img src="{{$plan->img}}">--}}
                             <p class="intro_subtext">Bekijk hier de plannen van de gemeente voor de buurt.</p>
                         </div>
                     </a>

@@ -16,6 +16,7 @@ class CreatePlannenTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->text('name');
+            $table->text('img');
         });
     }
 
