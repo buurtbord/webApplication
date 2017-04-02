@@ -1,50 +1,55 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <link rel="icon" href="/webApplication/resources/assets/img/favicon.ico" type="image/x-icon"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Buurtbord Landingpage</title>
+@extends('layouts.app')
 
-    <link href="/webApplication/resources/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/webApplication/resources/assets/css/main.css" type="text/css">
+@section('content')
+    <div class="container" id="plannen">
+        <div class="content">
+            <div class="header">
 
-</head>
-<body id="plannen"> <!-- redirect -->
-<div class="container">
-    <div class="content">
+                <form class="form-horizontal" role="form" method="POST" action="{{ url('/home') }}">
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary back_btn">
+                        <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>Terug
+                        </button>
+                    </div>
+                
+
+                <div class="logo_header">
+                    <h1>Gemeentelijke plannen</h1>
+                </div>
+                    <div class="form-group">
+                        <span class="intro_subtext username_display">Username</span>
+                        <button type="submit" class="btn btn-primary back_btn">Uitloggen</button>
+                    </div>
+                </form>
+            </div>
 
 
-        @foreach($buurtplannen as $buurtplan)
+            <div class="box">
+                <div class="plan">
+                    <img class="plannen_image" src="">
+                    <p class="intro_subtext">Titel plan
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
+
+
+            @foreach($plannen as $plan)
             <div class="box">
                 <div class="image_home"></div>
                 <div class="rectangle"></div>
                 <a href="">
                     <div class="rectangle_intro">
-                        <h3 class="intro_text">{{$buurtplan->name}}</h3>
+                        <h3 href="/plannen/{{$plan->id}}" class="intro_text">{{$plan->name}}</h3>
+                        {{--<img src="{{$plan->img}}">--}}
+                        <p class="intro_subtext">Bekijk hier de plannen van de gemeente voor de buurt.</p>
                     </div>
                 </a>
 
             </div>
-        @endforeach
+            @endforeach
 
-        {{--<div class="box">--}}
-        {{--<div class="image_home"></div>--}}
-        {{--<div class="rectangle"></div>--}}
-        {{--<a href="">--}}
-        {{--<div class="rectangle_intro">--}}
-        {{--<h3>Buurtbewoners plannen</h3>--}}
-        {{--<p>Bekijk hier de plannen van uw medebuurtbewoners</p>--}}
-        {{--</div>--}}
-        {{--</a>--}}
-
-        {{--</div>--}}
-
+        </div>
     </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/webApplication/resources/assets/js/bootstrap/bootstrap.min.js"></script>
-</body>
-</html>
+@endsection
