@@ -22,12 +22,16 @@ Route::get('plannen', function () {
 
 Route::auth();
 
-Route::get('/home', 'PlannenController@plannen');
+Route::get('/home', 'PlansController@index');
 
 
-Route::get('/plannen', 'PlannenController@plannen');
+Route::get('/plans', 'PlansController@index');
 
-Route::get('plannen/{plan}', 'BuurtPlannenController@buurtplannen');
+//Route::get('plans/{plan}', 'PlansController@show');
+
+Route::post('plans/{plan}/opinions', 'OpinionsController@show');
+
+//
 
 
 

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Plan;
 
 use Illuminate\Http\Request;
 
@@ -17,4 +17,12 @@ class PlannenController extends Controller
 
         return view('pagina.plannen', compact('plannen'));
     }
+
+
+    public function show(Plan $plan)
+    {
+
+        return view('pagina.show', ['plan' => $plan]);
+    }
+
 }

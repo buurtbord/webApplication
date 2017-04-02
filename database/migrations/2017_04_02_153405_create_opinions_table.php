@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBuurtplannenTable extends Migration
+class CreateOpinionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,12 @@ class CreateBuurtplannenTable extends Migration
      */
     public function up()
     {
-        Schema::create('buurtplannen', function (Blueprint $table) {
+        Schema::create('opinions', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name');
-            $table->integer('plannen_id')->unsigned()->index();
             $table->timestamps();
+            $table->integer('plan_id')->unsigned()->index();
+            $table->integer('user_id')->unsigned()->index();
+            $table->text('body');
         });
     }
 
@@ -27,6 +28,6 @@ class CreateBuurtplannenTable extends Migration
      */
     public function down()
     {
-        Schema::drop('buurtplannen');
+        Schema::drop('opinions');
     }
 }

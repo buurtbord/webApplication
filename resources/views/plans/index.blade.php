@@ -26,32 +26,34 @@
 
 
             <div class="box">
+                @foreach($plans as $plan)
                 <div class="plan_landing">
                 <div class="rectangle"></div>
-                    <h3 class="plannen_headtext">Gemeentelijke plannen</h3>
+                    <h3 class="plannen_headtext">{{$plan->title}}</h3>
                     <img class="plannen_landing_image" src="">
                     <p class="intro_subtext">Bekijk plannen
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </p>
                 </div>
+                @endforeach
 
-                <div class="plan_landing">
-                <div class="rectangle"></div>
-                    <h3 class="plannen_headtext">Bewoners plannen</h3>
-                    <img class="plannen_landing_image" src="">
-                    <p class="intro_subtext">Bekijk plannen
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </p>
-                </div>
+                {{--<div class="plan_landing">--}}
+                {{--<div class="rectangle"></div>--}}
+                    {{--<h3 class="plannen_headtext">Bewoners plannen</h3>--}}
+                    {{--<img class="plannen_landing_image" src="">--}}
+                    {{--<p class="intro_subtext">Bekijk plannen--}}
+                        {{--<i class="fa fa-angle-right" aria-hidden="true"></i>--}}
+                    {{--</p>--}}
+                {{--</div>--}}
 
-                <div class="plan_landing">
-                <div class="rectangle"></div>
-                    <h3 class="plannen_headtext">Mijn reacties op plannen</h3>
-                    <img class="plannen_landing_image" src="">
-                    <p class="intro_subtext">Bekijk plannen
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </p>
-                </div>
+                {{--<div class="plan_landing">--}}
+                {{--<div class="rectangle"></div>--}}
+                    {{--<h3 class="plannen_headtext">Mijn reacties op plannen</h3>--}}
+                    {{--<img class="plannen_landing_image" src="">--}}
+                    {{--<p class="intro_subtext">Bekijk plannen--}}
+                        {{--<i class="fa fa-angle-right" aria-hidden="true"></i>--}}
+                    {{--</p>--}}
+                {{--</div>--}}
 
             </div>
 
