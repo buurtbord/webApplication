@@ -92,14 +92,14 @@ a:hover {
   height: 80px;
   margin: 0 auto;
 
-  background-color: #18933c;
+  background-color: $color_green;
 }
 
 .rectangle_landing {
   width: 410px;
   height: 80px;
   margin: 0 auto;
-  background-color: #18933c;
+  background-color: $color_green;
 }
 
 .plan {
@@ -115,7 +115,7 @@ a:hover {
     .intro_subtext {
       font-family: "ArialMT";
       font-size: 18px;
-      background-color: #18933c;
+      background-color: $color_green;
       color: #fff;
       padding: 10px;
       margin-bottom: 0;
@@ -137,7 +137,7 @@ a:hover {
     .intro_subtext {
       font-family: "ArialMT";
       font-size: 18px;
-      background-color: #18933c;
+      background-color: $color_green;
       color: #fff;
       padding: 10px 15px;
       margin-bottom: 0;
@@ -172,7 +172,7 @@ a:hover {
   height: 582px;
   margin: 0 auto 200px auto;
 
-  background-color: #18933c;
+  background-color: $color_green;
 }
 
 #plannen .rectangle_intro
@@ -376,21 +376,25 @@ a:hover {
 }
 
 .form-group {
-  .submit_btn {
+  .submit_btn,
+  .submit_btn:active:hover,
+  .submit_btn:active:focus {
       border-radius: 0;
       border: none;
-      padding: 5px 12px;
-      background-color: #18933c;
+      padding: 5px 20px;
+      background-color: $color_green;
       font-family: "ArialMT";
       font-weight: bold;
       text-align: center;
   }
 
-  .cancel_btn {
-    border: solid 2px #18933c;
+  .cancel_btn,
+  .cancel_btn:active:hover,
+  .cancel_btn:active:focus {
+    border: solid 2px $color_green;
     background: transparent;
-    padding: 3px 25px;
-    color: #18933c;
+    padding: 3px 30px;
+    color: $color_green;
     border-radius: 0;
     font-family: "ArialMT";
     font-weight: bold;
@@ -410,6 +414,87 @@ a:hover {
     position: absolute;
 }
 
+.footer_wrapper {
+  .form-group {
+    display: inline-block;
+    margin: auto 25px;
+    padding: 0;
+  }
+}
+
+.title_block_opinion {
+
+  background-color: $color_green;
+
+  h1 {
+      font-family: 'AFRB';
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      padding: 20px 40px;
+      margin: 0;
+    }
+}
+
+.footer_wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #fff;
+    padding: 50px 0;
+}
+
+.nav_wrapper {
+
+  text-align: center;
+
+  h5 {
+      display: inline-block;
+      width: 150px;
+      margin: 30px 20px;
+      padding-bottom: 5px;
+      font-family: "ArialMT";
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+  h5:hover {
+    border-bottom: 2px solid $color_green;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+}
+
+.content_wrapper {
+    margin: 0 40px;
+}
+
+.content_wrapper_sub {
+  .form-control {
+      margin: 0 auto;
+      height: 300px;
+      border: solid 2px #4a4a4a;
+      color: #000;
+      font-family: "ArialMT";
+  }
+
+  p {
+    left: 0;
+    margin: 10px auto;
+    width: 85%;
+    position: relative;
+    font-family: "ArialMT";
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+
+/* Google Maps begin */
+
 .wrapper_map {
   background: #ddd;
   width: 66.666%;
@@ -418,6 +503,13 @@ a:hover {
   margin-left: 33.333%;
 }
 
-.footer_wrapper .form-group {
-    display: inline-block;
+#map {
+    height: 100%;
+    width: 100%;
 }
+
+.gmnoprint {
+    display: none;
+}
+
+/* Google Maps end */

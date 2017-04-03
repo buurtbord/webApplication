@@ -23,8 +23,51 @@
     @yield('content')
 
     <!-- JavaScripts -->
+
+    <script>
+        console.log ("werkt wel");
+
+        function initMap() {
+          var latlng = {
+            lat: 51.913801, lng: 4.477917
+        };
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 19,
+            center: latlng,
+            mapTypeId: 'satellite'
+          });
+          var marker = new google.maps.Marker({
+            position: latlng,
+            map: map
+          });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWeTzYEtS3-cLmr-YRkTVeP2hNcgTEsWk&callback=initMap" type="text/javascript"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    {{-- <script src="{{elixir('js/app.js')}}"></script> --}}
+
+    <script>
+
+        $('#mening_btn').click(function() {
+            $('#content_wrapper_sub').show();
+        });
+        
+        $('#mening_btn').click(function() {
+            $('#content_wrapper').hide();
+        });
+
+        $('#plan_btn').click(function() {
+            $('#content_wrapper').show();
+        });
+        
+        $('#plan_btn').click(function() {
+            $('#content_wrapper_sub').hide();
+        });
+
+
+    </script>
+
 </body>
 </html>
