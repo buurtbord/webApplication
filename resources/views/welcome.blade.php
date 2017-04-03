@@ -4,7 +4,7 @@
     <div class="container">
         <div class="content">
             <div class="header">
-                <div class="rectangle"></div>
+                <div class="rectangle_landing"></div>
                 <div class="logo_header"></div>
             </div>
 
