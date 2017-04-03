@@ -27,9 +27,13 @@ Route::get('/home', 'PlansController@index');
 
 Route::get('/plans', 'PlansController@index');
 
-//Route::get('plans/{plan}', 'PlansController@show');
+Route::get('plans/{plan}', 'PlansController@show');
 
-Route::post('plans/{plan}/opinions', 'OpinionsController@show');
+Route::get('plans/{plan}/opinions', 'OpinionsController@show');
+
+Route::get('users/{user}', 'UsersController@user');
+
+Route::get('users', 'UsersController@index');
 
 //
 

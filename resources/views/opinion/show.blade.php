@@ -14,7 +14,7 @@
                     </div>
                 
 
-                <div class="logo_header">
+                <div class="logo_header_plannen">
                     <h1>Gemeentelijke plannen</h1>
                 </div>
                     <div class="form-group">
@@ -24,7 +24,6 @@
                 </form>
             </div>
 
-
             <div class="box">
                 <div class="plan">
                     <img class="plannen_image" src="">
@@ -33,22 +32,6 @@
                     </p>
                 </div>
             </div>
-
-
-            @foreach($plannen as $plan)
-            <div class="box">
-                <div class="image_home"></div>
-                <div class="rectangle"></div>
-                <a href="">
-                    <div class="rectangle_intro">
-                        <h3 href="/plannen/{{$plan->id}}" class="intro_text">{{$plan->name}}</h3>
-                        {{--<img src="{{$plan->img}}">--}}
-                        <p class="intro_subtext">Bekijk hier de plannen van de gemeente voor de buurt.</p>
-                    </div>
-                </a>
-
-            </div>
-            @endforeach
 
         </div>
     </div>

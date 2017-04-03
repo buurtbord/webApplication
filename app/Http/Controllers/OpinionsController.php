@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Opinion;
 use App\Plan;
 use Illuminate\Http\Request;
 
@@ -9,9 +10,10 @@ use App\Http\Requests;
 
 class OpinionsController extends Controller
 {
-    public function show(Plan $plan)
+    public function show()
     {
+        $opinions = Opinion::all();
 
-        return view('plans.show', ['plan' => $plan]);
+        return view('opinions.show', compact('opinions'));
     }
 }
