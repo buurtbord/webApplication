@@ -23,7 +23,6 @@
                 </form>
             </div>
 
-
             <div class="box">
                 @foreach($plans as $plan)
                 <div class="plan_landing">

@@ -24,14 +24,20 @@
                 </form>
             </div>
 
+
+
             <div class="box">
+                @foreach($opinions as $opinion)
                 <div class="plan">
                     <img class="plannen_image" src="">
-                    <p class="intro_subtext">Titel plan
+                    <p class="intro_subtext">{{$opinion->title}}
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        {{$opinion->user_id}}
                     </p>
                 </div>
+                @endforeach
             </div>
+
 
         </div>
     </div>

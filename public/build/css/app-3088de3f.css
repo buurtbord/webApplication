@@ -278,24 +278,30 @@ a:hover {
   position: relative;
   top: 2px; }
 
-.form-group .submit_btn {
+.form-group .submit_btn,
+.form-group .submit_btn:active:hover,
+.form-group .submit_btn:active:focus {
   border-radius: 0;
   border: none;
-  padding: 5px 12px;
+  padding: 5px 20px;
   background-color: #18933c;
   font-family: "ArialMT";
   font-weight: bold;
   text-align: center; }
-.form-group .cancel_btn {
+.form-group .cancel_btn,
+.form-group .cancel_btn:active:hover,
+.form-group .cancel_btn:active:focus {
   border: solid 2px #18933c;
   background: transparent;
-  padding: 3px 25px;
+  padding: 3px 30px;
   color: #18933c;
   border-radius: 0;
   font-family: "ArialMT";
   font-weight: bold;
   text-align: center; }
-  .form-group .cancel_btn i.fa.fa-arrow-circle-o-left {
+  .form-group .cancel_btn i.fa.fa-arrow-circle-o-left,
+  .form-group .cancel_btn:active:hover i.fa.fa-arrow-circle-o-left,
+  .form-group .cancel_btn:active:focus i.fa.fa-arrow-circle-o-left {
     margin-right: 5px;
     font-size: 15px; }
 
@@ -305,6 +311,65 @@ a:hover {
   width: 33.333%;
   position: absolute; }
 
+.footer_wrapper .form-group {
+  display: inline-block;
+  margin: auto 25px;
+  padding: 0; }
+
+.title_block_opinion {
+  background-color: #18933c; }
+  .title_block_opinion h1 {
+    font-family: 'AFRB';
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 40px;
+    margin: 0; }
+
+.footer_wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #fff;
+  padding: 50px 0; }
+
+.nav_wrapper {
+  text-align: center; }
+  .nav_wrapper h5 {
+    display: inline-block;
+    width: 150px;
+    margin: 30px 20px;
+    padding-bottom: 5px;
+    font-family: "ArialMT";
+    font-size: 18px;
+    font-weight: bold; }
+  .nav_wrapper h5:hover {
+    border-bottom: 2px solid #18933c;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    cursor: pointer; }
+
+.content_wrapper {
+  margin: 0 40px; }
+
+.content_wrapper_sub .form-control {
+  margin: 0 auto;
+  height: 300px;
+  border: solid 2px #4a4a4a;
+  color: #000;
+  font-family: "ArialMT"; }
+.content_wrapper_sub p {
+  left: 0;
+  margin: 10px auto;
+  width: 85%;
+  position: relative;
+  font-family: "ArialMT";
+  font-size: 18px;
+  font-weight: bold; }
+
+/* Google Maps begin */
 .wrapper_map {
   background: #ddd;
   width: 66.666%;
@@ -312,7 +377,13 @@ a:hover {
   position: absolute;
   margin-left: 33.333%; }
 
-.footer_wrapper .form-group {
-  display: inline-block; }
+#map {
+  height: 100%;
+  width: 100%; }
+
+.gmnoprint {
+  display: none; }
+
+/* Google Maps end */
 
 /*# sourceMappingURL=app-3088de3f.css.map */
